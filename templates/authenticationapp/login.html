@@ -5,7 +5,7 @@
 
     <div class="jumbotron">
     <h1>Please Login</h1>
-        <form action={% url 'authenticationapp:user_login' %}"u" method="POST">
+        <form action={% url 'authenticationapp:user_login' %} method="POST">
             {% csrf_token %}
             <label for="username">username:</label>
             <input type="text" name="username" placeholder="Enter Username">
